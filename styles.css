@@ -1,0 +1,92 @@
+body {
+  margin: 25px 60px;
+  background-color: rgb(230, 230, 230);
+}
+
+body * {
+  background-color: rgb(230, 230, 230);
+}
+
+/*ledger and all children*/
+.ledger {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+  height: 35px;
+}
+
+.ledger > * {
+  border: none;
+  color: rgb(40, 40, 40);
+  font-weight: bold;
+  font-size: 100%;
+  cursor: pointer;
+}
+
+.ledger > *:hover {
+  color: rgb(0, 115, 255);
+  font-weight: bolder;
+  transform: scale(1.1);
+  transition:all ease-in-out 300ms;
+}
+
+.line {
+  border: 1px solid rgb(0, 115, 255);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown_button {
+  color: rgb(40,40,40);
+  height:35px;
+  font-weight: bold;
+  font-size:100%;
+  border: none;
+  cursor: pointer;
+  padding: 8px 45px;
+}
+
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+}
+
+.dropdown_content a {
+  color: rgb(40,40,40);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: 100%
+}
+
+.dropdown_content a:hover {
+  background-color: rgb(200,200,200);
+  border-bottom:2px solid rgb(0, 115, 255);
+  color: rgb(235,80,1);
+  transition:all ease-in-out 200ms;
+}
+
+.dropdown:hover .dropdown_content {
+  display: block;
+}
+
+.dropdown:hover .dropdown_button {
+  border-bottom:2px solid rgb(0, 115, 255);
+  color: rgb(235,80,1);
+}
+
+
+
+#face{
+  margin-top: 142px;
+  margin-left:156px;
+  width: 25%;
+  height: 25%;
+  border-radius: 100%;
+}
