@@ -2,3 +2,4 @@ node_modules/
 face_backup.jpg
 package-lock.json
 package.json
+.vscode
