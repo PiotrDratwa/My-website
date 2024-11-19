@@ -7,32 +7,37 @@
     <script defer src="script.js"></script>
     </head>
     <body>
-        <section class="ledger" class="hidden">
-          <input type="button" id="abt_me" value="About me">
-          <input type="button" id="Education" value="Education">
-          <input type="button" id="contact" value="Contact">
-          <input type="button" id="skills" value="Skills">
-          <div class="dropdown">
-            <button class="dropdown_button">Projects</button>
-            <div class="dropdown_content">
-              <a href=# id="first_link">Essay grading AI</a>
-              <a href=#>RSA dataframe encryption library</a>
-              <a href=#>This portfolio website</a>
+        <div id="ledger">
+          <section class="ledger_container">
+            <input type="button" id="home" class="ledger_button" value="Home">
+            <input type="button" id="abt_me" class="ledger_button" value="About me">
+            <input type="button" id="Education" class="ledger_button" value="Education">
+            <input type="button" id="skills" class="ledger_button" value="Skills">
+            <input type="button" id="contact" class="ledger_button" value="Contact">
+            <div class="dropdown">
+              <button id="dropdown_button" class="ledger_button">Projects</button>
+              <div class="dropdown_content">
+                <a href=# class="ledger_button">Essay grading AI</a>
+                <a href=# class="ledger_button">RSA dataframe encryption library</a>
+                <a href=# class="ledger_button">This portfolio website</a>
+              </div>
             </div>
-          </div>
-        </section>
-        <hr class="line">
+          </section>
+          <hr class="line" id="ledger_line">
+        </div>
+
         <section id="home_page" >
-          <img src="face.bmp" id="face">
+          <img src="images/face.bmp" id="face">
           <div id="introduction">
             <h1 class="headers">Hello,</h1>
             <h1 class="headers">I'm Piotr Dratwa</h1>
-              <a href="#"><img src="Linkedin_logo.webp" class="icons"></a>
-              <a href="#"><img src="pngwing.com.png" class="icons" id="github"></a>
+              <a href="#"><img src="images/Linkedin_logo.webp" class="icons"></a>
+              <a href="#"><img src="images/pngwing.com.png" class="icons" id="github"></a>
           </div>
         </section>
           <hr class="line">
-        <section id="text_section" class="hidden">
+
+        <section id="about_me" class="hidden">
           <h1>About me</h1>
           <p class = "medium_text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -44,8 +49,9 @@
           </p>
         </section>
         <hr class="line">
+
         <section id="education" class="hidden">
-          <img src="cdv-foto.jpg" id="image_content">
+          <img src="images/cdv-foto.jpg" id="image_content">
           <div id = "education_text", class="medium_text">
             <h1 id="degree">Computer science IIIrd year</h1>
             <h2 id="name">Collegium da Vinci</h2>
@@ -53,5 +59,28 @@
           </div>
         </section>
         <hr class="line">
+
+        <div class="hidden">
+          <section id="skills_categories" class="hidden">
+
+            <input type="button" class="skill_category_button" value="front end">
+            <div class="skill_category"><p class="medium_text">front end</p></div>
+
+            <input type="button" class="skill_category_button" value="back end">
+            <div class="skill_category">back end</div>
+
+            <input type="button" class="skill_category_button" value="low level">
+            <div class="skill_category">low level</div>
+
+            <input type="button" class="skill_category_button" value="Data and AI">
+            <div class="skill_category">Data and AI</div>
+
+            <input type="button" class="skill_category_button" value="Devops">
+            <div class="skill_category">Devops/programming infrastructure tools</div>
+
+            <input type="button" class="skill_category_button" value="theory">
+            <div class="skill_category">theory</div>
+          </section>
+        </div>
       </body>
 </html>

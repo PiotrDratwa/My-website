@@ -1,9 +1,26 @@
+@font-face {
+  font-family: inter;
+  src: url(fonts/Inter-Black.woff2);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: inter;
+  src: url(fonts/Inter-Medium.woff2);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: inter;
+  src: url(fonts/Inter-SemiBold.woff2);
+  font-weight:600;
+}
+
 body {
   margin: 25px 60px;
-  background-color: rgb(230, 230, 230);
   width: auto;
   height: auto;
-  background-image: url('background1.avif');
+  background-image: url('images/background1.avif');
   background-repeat: repeat-y;
   background-attachment: fixed;
   background-position: center;
@@ -11,26 +28,7 @@ body {
 }
 
 body * {
-  /*background-color: rgb(230, 230, 230);*/
   background-color:transparent;
-}
-
-@font-face {
-  font-family: inter;
-  src: url(Inter-Black.woff2);
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: inter;
-  src: url(Inter-Medium.woff2);
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: inter;
-  src: url(Inter-SemiBold.woff2);
-  font-weight:600;
 }
 
 h1 {
@@ -45,32 +43,59 @@ img {
   width: auto;
 }
 
-/*ledger and all children*/
-.ledger {
-  display: flex;
-  justify-content: space-around;
-  flex: 1;
-  height: 35px;
+.medium_text {
+  color:rgb(50, 50, 50);
+  font-weight:600;
+  font-family:inter;
 }
 
-.ledger > * {
+.hidden{
+  opacity:0;
+  transition: all 500ms;
+}
+
+.show{
+  opacity: 1;
+}
+
+.line {
+  border: 1px solid rgb(0, 115, 255);
+}
+
+/*ledger and all children*/
+
+#ledger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color:rgb(255, 255, 255);
+  padding-top: 25px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.ledger_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.ledger_button {
   border: none;
   color: rgb(40, 40, 40);
   font-weight: bold;
   font-size: 130%;
   cursor: pointer;
   font-family: inter;
+  margin-bottom: 5px;
 }
 
-.ledger > *:hover {
+.ledger_button:hover {
   color: rgb(0, 115, 255);
   font-weight: bolder;
   transform: scale(1.1);
   transition:all ease-in-out 300ms;
-}
-
-.line {
-  border: 1px solid rgb(0, 115, 255);
 }
 
 .dropdown {
@@ -79,15 +104,9 @@ img {
 }
 
 
-.dropdown_button {
+#dropdown_button {
   color: rgb(40,40,40);
-  height:35px;
-  font-weight: bold;
-  font-size:100%;
-  border: none;
-  cursor: pointer;
   padding: 0px 45px;
-  font-family:inter;
 }
 
 
@@ -95,6 +114,7 @@ img {
   display: none;
   position: absolute;
   min-width: 160px;
+  padding-top: 7%;
 }
 
 .dropdown_content a {
@@ -104,11 +124,13 @@ img {
   display: block;
   width: 100%;
   font-family:inter;
+  background-color: rgb(230,230,230);
 }
 
 .dropdown_content a:hover {
+  color:rgb(0, 115, 255);
+  border: 2px solid rgb(0, 115, 255);
   background-color: rgb(200,200,200);
-  color: rgb(235,80,1);
   transition:all ease-in-out 200ms;
 }
 
@@ -116,8 +138,17 @@ img {
   display: block;
 }
 
-.dropdown:hover .dropdown_button {
-  color: rgb(235,80,1);
+.dropdown:hover #dropdown_button {
+  color:rgb(0, 115, 255);
+}
+
+/*home page and all children*/
+
+#home_page {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  margin-bottom:10%;
 }
 
 #face{
@@ -128,19 +159,9 @@ img {
   border-radius: 100%;
 }
 
-#home_page {
-  display: flex;
-  align-items: center;
-  gap: 10%;
-  margin-bottom:10%;
-}
-
 #introduction {
-  color:rgb(0, 115, 255);
-  font-weight: bold;
   font-size: 2vw;
   margin-top:10%;
-  font-family:inter;
 }
 
 .icons{
@@ -148,30 +169,22 @@ img {
   width: 5%;
 }
 
-#text_section {
+/*about me section and all children*/
+
+#about_me {
   color:rgb(0, 115, 255);
   font-weight: bold;
   font-size: 2vw;
-  margin-top:8%;
-  margin-bottom: 8%;
-  margin-left:15%;
-  margin-right:15%;
+  margin: 8% 15%;
 }
 
-.medium_text {
-  color:rgb(50, 50, 50);
-  font-weight:600;
-  font-family:inter;
-}
+/*education section and all children*/
 
 #education {
   display: flex;
   gap:4%;
   background-color: rgb(230, 230, 230);
-  margin-left:15%;
-  margin-right:15%;
-  margin-bottom: 8%;
-  margin-top: 8%;
+  margin: 8% 20%;
   padding: 4%;
   border-radius: 5%;
   box-shadow: 10px 10px 5px lightblue;
@@ -181,19 +194,45 @@ img {
   background-color: rgb(250, 250, 250);
   border:5px solid rgb(0, 115, 255);
   box-shadow: 30px 30px 15px lightblue;
-  transition:all ease-in-out 400ms;
+  transition:all ease-in-out 500ms;
 }
 
 #image_content {
   max-height: 40%;
   max-width: 40%;
+  align-self: center;
 }
 
-.hidden{
-  opacity:0;
-  transition: all 1300ms;
+#education_text {
+  font-size: 128%;
 }
 
-.show{
-  opacity: 1;
+/*skills section and all children*/
+/*skills categories*/
+#skills_categories{
+  margin: 8% 15%;
+  display: grid;
+  grid-template-columns: 28% 28% 28%;
+  align-items: baseline;
+  justify-content: space-evenly;
+  padding: 5%;
+  background-color:rgb(0, 115, 255);
+  row-gap: 8%;
+  border-radius: 4%;
+  box-shadow: 10px 10px 5px lightblue;
+}
+
+.skill_category_button{
+  background-color: lightblue;
+  border: none;
+  color: rgb(40, 40, 40);
+  font-weight: bold;
+  font-size: 130%;
+  cursor: pointer;
+  font-family: inter;
+  padding: 28%;
+}
+
+.skill_category{
+  display: none;
 }
