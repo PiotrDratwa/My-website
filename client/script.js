@@ -10,11 +10,9 @@ const observerFactory = (show_class) => {
     });
 };
 
-function show_skills_tab(){
-    for(e of document.querySelectorAll('.skill_category_button_show')){
-        document.getElementById("skills_categories").removeChild(e);
-    }
-    document.getElementById("123").style.display = "flex";
+function show_skills_tab(id){
+    document.getElementById(id).style.display = "grid";
+    document.getElementById(id).style.gridTemplateColumns = "auto auto auto";
 }
 
 const hiddenElements = document.querySelectorAll('.hidden');
