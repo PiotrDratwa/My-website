@@ -328,7 +328,18 @@ img {
 }
 
 .skills{
-  background-color: rgb(0, 115, 255);
+  display:none;
+  grid-template-columns : 28% 28% 28%;
+  margin: 8% 15%;
+  padding : 5%;
+  gap : 2%;
+  align-items : baseline;
+  justify-content : center;
+  row-gap: 3%;
+  border-radius: 4%;
+}
+
+.skill_button {
   border: none;
   font-weight: bold;
   font-size: 130%;
@@ -336,21 +347,13 @@ img {
   font-family: inter;
   padding: 28%;
   border-radius: 4%;
-  opacity: 1;
-  filter:blur(0px);
-  transform: translateX(0);
-
-  margin: 0% 15%;
-  display: none;
-  grid-template-columns: 28% 28% 28%;
-  align-items: baseline;
-  justify-content: center;
-  padding: 5%;
-  gap: 2%;
-  row-gap: 3%;
-  border-radius: 4%;
+  gap: 10%;
+  row-gap: 10%;
+  background-color: rgb(0, 115, 255);
 }
 
-#front_end_skills {
-  display:grid;
+.skill_button:hover{
+  scale:1.1;
+  border: 4px solid rgb(40, 40, 40);
+  transition:all ease-in-out 200ms;
 }

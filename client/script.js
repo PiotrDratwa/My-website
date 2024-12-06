@@ -11,8 +11,8 @@ const observerFactory = (show_class) => {
 };
 
 function show_skills_tab(id){
-    document.getElementById(id).style.display = "grid";
-    document.getElementById(id).style.gridTemplateColumns = "auto auto auto";
+    el_style = document.getElementById(id).style;
+    el_style.display = "grid";
 }
 
 const hiddenElements = document.querySelectorAll('.hidden');
