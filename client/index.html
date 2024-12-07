@@ -26,6 +26,7 @@
           <hr class="line" id="ledger_line">
         </div>
 
+
         <section id="home_page" >
           <img src="images/face.bmp" id="face">
           <div id="introduction">
@@ -36,6 +37,7 @@
           </div>
         </section>
           <hr class="line">
+
 
         <section id="about_me" class="hidden">
           <h1>About me</h1>
@@ -50,6 +52,7 @@
         </section>
         <hr class="line">
 
+
         <section id="education" class="hidden">
           <img src="images/cdv-foto.jpg" id="image_content">
           <div id = "education_text", class="medium_text">
@@ -60,14 +63,16 @@
         </section>
         <hr class="line">
 
+
           <section id="skills_categories">
-            <input type="button" class="skill_category_button_hidden" value="front end" id="front_end" onclick="show_skills_tab('front_end_skills')">
-            <input type="button" class="skill_category_button_hidden" value="back end" id="back_end">
-            <input type="button" class="skill_category_button_hidden" value="low level" id="low_level">
-            <input type="button" class="skill_category_button_hidden" value="Data and AI" id="data_ai">
-            <input type="button" class="skill_category_button_hidden" value="Devops" id="devops">
-            <input type="button" class="skill_category_button_hidden" value="theory" id="theory" onclick="show_skills_tab('theory_skills')">
+            <input type="button" class="skill_category_button_hidden" value="front end" id="front_end" onclick="skill_tab.show_skills_tab('front_end_skills')">
+            <input type="button" class="skill_category_button_hidden" value="back end" id="back_end" onclick="skill_tab.show_skills_tab('back_end_skills')">
+            <input type="button" class="skill_category_button_hidden" value="low level" id="low_level" onclick="skill_tab.show_skills_tab('low_level_skills')">
+            <input type="button" class="skill_category_button_hidden" value="Data and AI" id="data_ai" onclick="skill_tab.show_skills_tab('data_ai_skills')">
+            <input type="button" class="skill_category_button_hidden" value="Devops" id="devops" onclick="skill_tab.show_skills_tab('devops_skills')">
+            <input type="button" class="skill_category_button_hidden" value="theory" id="theory" onclick="skill_tab.show_skills_tab('theory_skills')">
           </section>
+
 
           <section id="skills_section">
             <div class="skills" id="front_end_skills">
@@ -75,14 +80,44 @@
               <input type="button" class="skill_button" value="HTML" onclick="">
               <input type="button" class="skill_button" value="CSS" onclick="">
             </div>
-            <div class="skills">back end</div>
-            <div class="skills">low level</div>
-            <div class="skills">Data and AI</div>
-            <div class="skills">Devops/programming infrastructure tools</div>
+
+            <div class="skills" id="back_end_skills">
+              <input type="button" class="skill_button" value="Python" onclick="">
+              <input type="button" class="skill_button" value="Nodejs" onclick="">
+              <input type="button" class="skill_button" value="REST API" onclick="">
+              <input type="button" class="skill_button" value="Git" onclick="">
+              <input type="button" class="skill_button" value="Databases" onclick="">
+              <input type="button" class="skill_button" value="Websocket" onclick="">
+            </div>
+
+            <div class="skills" id="low_level_skills">
+              <input type="button" class="skill_button" value="C" onclick="">
+              <input type="button" class="skill_button" value="C++" onclick="">
+              <input type="button" class="skill_button" value="REST API" onclick="">
+              <input type="button" class="skill_button" value="Assembly x86" onclick="">
+              <input type="button" class="skill_button" value="Arduino" onclick="">
+            </div>
+
+            <div class="skills" id="data_ai_skills">
+              <input type="button" class="skill_button" value="Python" onclick="">
+              <input type="button" class="skill_button" value="AWS" onclick="">
+              <input type="button" class="skill_button" value="SQL" onclick="">
+            </div>
+
+            <div class="skills" id="devops_skills">
+              <input type="button" class="skill_button" value="Git" onclick="">
+              <input type="button" class="skill_button" value="SQL" onclick="">
+              <input type="button" class="skill_button" value="MongoDB" onclick="">
+              <input type="button" class="skill_button" value="Linux" onclick="">
+              <input type="button" class="skill_button" value="AWS" onclick="">
+              <input type="button" class="skill_button" value="Docker" onclick="">
+            </div>
+
             <div class="skills" id="theory_skills">
-              <input type="button" class="skill_button" value="ds" onclick="">
-              <input type="button" class="skill_button" value="ds" onclick="">
-              <input type="button" class="skill_button" value="asa" onclick="">
+              <input type="button" class="skill_button" value="Concurrency" onclick="">
+              <input type="button" class="skill_button" value="Agile" onclick="">
+              <input type="button" class="skill_button" value="SDLC" onclick="">
+              <input type="button" class="skill_button" value="testing principles" onclick="">
             </div>
         </section>
         </body>
