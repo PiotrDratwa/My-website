@@ -330,13 +330,18 @@ img {
 .skills{
   display:none;
   grid-template-columns : 28% 28% 28%;
-  margin: 8% 15%;
+  margin: 0% 15%;
   padding : 5%;
   gap : 2%;
   align-items : baseline;
   justify-content : center;
   row-gap: 3%;
   border-radius: 4%;
+}
+
+#skill_details{
+  display:grid;
+  margin: 0% 15%;
 }
 
 .skill_button {

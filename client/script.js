@@ -41,4 +41,11 @@ class skills_tab{
     }
 }
 
+function show_details(id){
+    const button = document.getElementById(id)
+    const node = document.createTextNode("aaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+    document.getElementById("skill_details").appendChild(button)
+    document.getElementById("skill_details").appendChild(node)
+}
+
 const skill_tab = new skills_tab();
