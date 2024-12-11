@@ -75,54 +75,54 @@
 
 
           <div class="skills" id="skill_details">
-
+            <p id="skill_details_text" class="medium_text"></p>
           </div>
 
 
           <section id="skills_section">
             <div class="skills" id="front_end_skills">
-              <input type="button" class="skill_button" value="Javascript" id="Javascript" onclick="show_details('Javascript')">
-              <input type="button" class="skill_button" value="HTML" id="HTML" onclick="show_details('HTML')">
-              <input type="button" class="skill_button" value="CSS" id="CSS" onclick="show_details('CSS')">
+              <input type="button" class="skill_button" value="Javascript" id="Javascript" onclick="skill_tab.show_details('Javascript', 'front_end_skills')">
+              <input type="button" class="skill_button" value="HTML" id="HTML" onclick="skill_tab.show_details('HTML', 'front_end_skills')">
+              <input type="button" class="skill_button" value="CSS" id="CSS" onclick="skill_tab.show_details('CSS', 'front_end_skills')">
             </div>
 
             <div class="skills" id="back_end_skills">
-              <input type="button" class="skill_button" value="Python" id="Python" onclick="show_details('Python')">
-              <input type="button" class="skill_button" value="Nodejs" id="Nodejs" onclick="show_details('Nodejs')">
-              <input type="button" class="skill_button" value="REST API" id="REST API" onclick="show_details('REST API')">
-              <input type="button" class="skill_button" value="Git" id="Git" onclick="show_details('Git')">
-              <input type="button" class="skill_button" value="Databases" id="Databases" onclick="show_details('Databases')">
-              <input type="button" class="skill_button" value="Websocket" id="Websocket" onclick="show_details('Websocket')">
+              <input type="button" class="skill_button" value="Python" id="Python" onclick="skill_tab.show_details('Python', 'back_end_skills')">
+              <input type="button" class="skill_button" value="Nodejs" id="Nodejs" onclick="skill_tab.show_details('Nodejs', 'back_end_skills')">
+              <input type="button" class="skill_button" value="REST API" id="REST API" onclick="skill_tab.show_details('REST API', 'back_end_skills')">
+              <input type="button" class="skill_button" value="Git" id="Git" onclick="skill_tab.show_details('Git', 'back_end_skills')">
+              <input type="button" class="skill_button" value="Databases" id="Databases" onclick="skill_tab.show_details('Databases', 'back_end_skills')">
+              <input type="button" class="skill_button" value="Websocket" id="Websocket" onclick="skill_tab.show_details('Websocket', 'back_end_skills')">
             </div>
 
             <div class="skills" id="low_level_skills">
-              <input type="button" class="skill_button" value="C" id="C" onclick="show_details('C')">
-              <input type="button" class="skill_button" value="C++" id="C++" onclick="show_details('C++')">
-              <input type="button" class="skill_button" value="REST API" id="REST API" onclick="show_details('REST API')">
-              <input type="button" class="skill_button" value="Assembly x86" id="Assembly x86" onclick="show_details('Assembly x86')">
-              <input type="button" class="skill_button" value="Arduino" id="Arduino" onclick="show_details('Arduino')">
+              <input type="button" class="skill_button" value="C" id="C" onclick="skill_tab.show_details('C', 'low_level_skills')">
+              <input type="button" class="skill_button" value="C++" id="C++" onclick="skill_tab.show_details('C++', 'low_level_skills')">
+              <input type="button" class="skill_button" value="REST API" id="REST API" onclick="skill_tab.show_details('REST API', 'low_level_skills')">
+              <input type="button" class="skill_button" value="Assembly x86" id="Assembly x86" onclick="skill_tab.show_details('Assembly x86', 'low_level_skills')">
+              <input type="button" class="skill_button" value="Arduino" id="Arduino" onclick="skill_tab.show_details('Arduino', 'low_level_skills')">
             </div>
 
             <div class="skills" id="data_ai_skills">
-              <input type="button" class="skill_button" value="Python" id="Python" onclick="show_details('Python')">
-              <input type="button" class="skill_button" value="AWS" id="AWS" onclick="show_details('AWS')">
-              <input type="button" class="skill_button" value="SQL" id="SQL" onclick="show_details('SQL')">
+              <input type="button" class="skill_button" value="Python" id="Python" onclick="skill_tab.show_details('Python', 'data_ai_skills')">
+              <input type="button" class="skill_button" value="AWS" id="AWS" onclick="skill_tab.show_details('AWS', 'data_ai_skills')">
+              <input type="button" class="skill_button" value="SQL" id="SQL" onclick="skill_tab.show_details('SQL', 'data_ai_skills')">
             </div>
 
             <div class="skills" id="devops_skills">
-              <input type="button" class="skill_button" value="Git" id="Git" onclick="show_details('Git')">
-              <input type="button" class="skill_button" value="SQL" id="SQL" onclick="show_details('SQL')">
-              <input type="button" class="skill_button" value="MongoDB" id="MongoDB" onclick="show_details('MongoDB')">
-              <input type="button" class="skill_button" value="Linux" id="Linux" onclick="show_details('Linux')">
-              <input type="button" class="skill_button" value="AWS" id="AWS" onclick="show_details('AWS')">
-              <input type="button" class="skill_button" value="Docker" id="Docker" onclick="show_details('Docker')">
+              <input type="button" class="skill_button" value="Git" id="Git" onclick="skill_tab.show_details('Git', 'devops_skills')">
+              <input type="button" class="skill_button" value="SQL" id="SQL" onclick="skill_tab.show_details('SQL', 'devops_skills')">
+              <input type="button" class="skill_button" value="MongoDB" id="MongoDB" onclick="skill_tab.show_details('MongoDB', 'devops_skills')">
+              <input type="button" class="skill_button" value="Linux" id="Linux" onclick="skill_tab.show_details('Linux', 'devops_skills')">
+              <input type="button" class="skill_button" value="AWS" id="AWS" onclick="skill_tab.show_details('AWS', 'devops_skills')">
+              <input type="button" class="skill_button" value="Docker" id="Docker" onclick="skill_tab.show_details('Docker', 'devops_skills')">
             </div>
 
             <div class="skills" id="theory_skills">
-              <input type="button" class="skill_button" value="Concurrency" id="Concurrency" onclick="show_details('Concurrency')">
-              <input type="button" class="skill_button" value="Agile" id="Agile" onclick="show_details('Agile')">
-              <input type="button" class="skill_button" value="SDLC" id="SDLC" onclick="show_details('SDLC')">
-              <input type="button" class="skill_button" value="testing principles" id="testing principles" onclick="show_details('testing principles')">
+              <input type="button" class="skill_button" value="Concurrency" id="Concurrency" onclick="skill_tab.show_details('Concurrency', 'theory_skills')">
+              <input type="button" class="skill_button" value="Agile" id="Agile" onclick="skill_tab.show_details('Agile', 'theory_skills')">
+              <input type="button" class="skill_button" value="SDLC" id="SDLC" onclick="skill_tab.show_details('SDLC', 'theory_skills')">
+              <input type="button" class="skill_button" value="testing principles" id="testing principles" onclick="skill_tab.show_details('testing principles', 'theory_skills')">
             </div>
         </section>
         </body>

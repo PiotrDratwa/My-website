@@ -376,3 +376,15 @@ img {
 .slide-in {
   animation: slide-in 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
+
+#skill_details {
+  padding-top: 8%;
+  padding-bottom: 0%;
+  grid-template-columns : 28% 56%;
+  align-content: center;
+  align-items: center;
+}
+
+#skill_details_text {
+  font-size: 112%;
+}
