@@ -28,12 +28,11 @@ class skills_tab{
     show_skills_tab(id){
         //if there was last shown tab, then hide it so the new one can appear
         if(this.last_tab !== ""){
-            document.getElementById(this.last_tab).style.display = "none"
+            document.getElementById(this.last_tab).style.display = "none";
         }
-        if(this.last_skill !== ""){
-            const last_button = document.getElementById(this.last_skill)
-            document.getElementById(this.last_cat).appendChild(last_button)
-            document.getElementById("skill_details_text").innerHTML = ""
+        if(this.last_tab == id){
+            this.last_tab = ""
+            return
         }
 
         document.getElementById(id).style.display = "grid";
@@ -47,20 +46,30 @@ class skills_tab{
         }
     }
 
+
     show_details(id, cat){
         if(this.last_skill !== ""){
-            const last_button = document.getElementById(this.last_skill)
-            document.getElementById(this.last_cat).appendChild(last_button)
-            document.getElementById("skill_details_text").innerHTML = ""
+            const last_button = document.getElementById(this.last_skill);
+            document.getElementById(this.last_cat).appendChild(last_button);
+            document.getElementById("skill_details_text").innerHTML = "";
         }
 
-        const button = document.getElementById(id)
-        console.log(button)
-        document.getElementById("skill_details").prepend(button)
-        document.getElementById("skill_details_text").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+        //make it so it disappears when clicking on the shown skill again
+        const child = document.querySelector(`#${cat} > #${id}`);
+        if(this.last_skill == id && this.last_cat == cat){
+            return
+        }
+        document.getElementById("skill_details").prepend(child);
+        document.getElementById("skill_details_text").innerHTML = `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum`;
 
-        this.last_skill = id
-        this.last_cat = cat
+        this.last_skill = id;
+        this.last_cat = cat;
     }
 }
 
