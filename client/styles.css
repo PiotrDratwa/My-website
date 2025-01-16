@@ -388,3 +388,17 @@ img {
 #skill_details_text {
   font-size: 112%;
 }
+
+/*projects section and it's children*/
+#projects_section{
+  margin: 8% 12%;
+  margin-bottom: 0%;
+  padding: 5%;
+}
+
+.projects{
+  color:rgb(0, 115, 255);
+  font-weight: bold;
+  font-size: 2vw;
+  margin-bottom: 25%;
+}
