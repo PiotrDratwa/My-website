@@ -16,6 +16,10 @@
   font-weight:600;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 25px 60px;
   width: auto;
@@ -89,7 +93,7 @@ img {
   font-size: 130%;
   cursor: pointer;
   font-family: inter;
-  margin-bottom: 5px;
+  text-decoration: none;
 }
 
 .ledger_button:hover {
@@ -211,13 +215,13 @@ img {
 /*skills section and all children*/
 /*skills categories*/
 #skills_categories{
-  margin: 8% 15%;
+  margin: 8% 8% 15%;
   margin-bottom: 0%;
   display: grid;
   grid-template-columns: 28% 28% 28%;
   align-items: baseline;
   justify-content: center;
-  padding: 5%;
+  padding: 7%;
   gap: 2%;
   row-gap: 3%;
   border-radius: 4%;
@@ -323,8 +327,58 @@ img {
   color: rgb(255, 255, 255);
 }
 
-.skills {
-  display:none;
+#Javascript{
+  background:url('images/js.png');
+  background-color: rgb(0, 115, 255);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgb(255, 255, 255);
+}
+
+#HTML{
+  background:url('images/html.png');
+  background-color: rgb(0, 115, 255);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgb(255, 255, 255);
+}
+
+#CSS{
+  background:url('images/css.png');
+  background-color: rgb(0, 115, 255);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgb(255, 255, 255);
+}
+
+#Python{
+  background:url('images/python.png');
+  background-color: rgb(0, 115, 255);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgb(255, 255, 255);
+}
+
+#Nodejs{
+  background:url('images/nodejs.png');
+  background-color: rgb(0, 115, 255);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgb(255, 255, 255);
+}
+
+#REST_API{
+  background:url('images/rest.png');
+  background-color: rgb(0, 115, 255);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgb(255, 255, 255);
 }
 
 .skills{
@@ -392,13 +446,15 @@ img {
 /*projects section and it's children*/
 #projects_section{
   margin: 8% 12%;
-  margin-bottom: 0%;
-  padding: 5%;
-}
-
-.projects{
+  padding: 0% 5%;
+  padding-bottom: 0%;
   color:rgb(0, 115, 255);
   font-weight: bold;
   font-size: 2vw;
-  margin-bottom: 25%;
+  margin-bottom: 12%;
 }
+
+.project_title{
+  padding-top: 6%;
+}
+

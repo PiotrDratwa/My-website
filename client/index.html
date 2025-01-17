@@ -9,17 +9,19 @@
     <body>
         <div id="ledger">
           <section class="ledger_container">
-            <input type="button" id="home" class="ledger_button" value="Home">
-            <input type="button" id="abt_me" class="ledger_button" value="About me">
-            <input type="button" id="Education" class="ledger_button" value="Education">
-            <input type="button" id="skills" class="ledger_button" value="Skills">
-            <input type="button" id="contact" class="ledger_button" value="Contact">
+            <a href=#home_page type="button" id="home" class="ledger_button">Home</a>
+            <a href=#home_line type="button" id="abt_me" class="ledger_button">About me</a>
+            <a href=#about_line type="button" id="Education" class="ledger_button">Education</a>
+            <a href=#education_line type="button" id="skills" class="ledger_button">Skills</a>
+            <a href=# type="button" id="contact" class="ledger_button">Contact</a>
             <div class="dropdown">
               <button id="dropdown_button" class="ledger_button">Projects</button>
               <div class="dropdown_content">
-                <a href=# class="ledger_button">Essay grading AI</a>
-                <a href=# class="ledger_button">RSA dataframe encryption library</a>
-                <a href=# class="ledger_button">This portfolio website</a>
+                <a href=#this_website_title class="ledger_button">portfolio website</a>
+                <a href=#REST_API_projects_title class="ledger_button">REST API projects</a>
+                <a href=#writing_quality_projections_title class="ledger_button">Writing quality projections AI</a>
+                <a href=#dataframe_encryption_title class="ledger_button">dataframe encryption</a>
+                <a href=#IOT_Arduino_title class="ledger_button">IOT Arduino project</a>
               </div>
             </div>
           </section>
@@ -36,7 +38,7 @@
               <a href="#"><img src="images/pngwing.com.png" class="icons" id="github"></a>
           </div>
         </section>
-          <hr class="line">
+        <hr class="line" id="home_line">
 
 
         <section id="about_me" class="hidden">
@@ -50,7 +52,7 @@
             sunt in culpa qui officia deserunt mollit anim id est laborum
           </p>
         </section>
-        <hr class="line">
+        <hr class="line" id="about_line">
 
 
         <section id="education" class="hidden">
@@ -61,7 +63,7 @@
             <h2 id="date">2022-now</h2>
           </div>
         </section>
-        <hr class="line">
+        <hr class="line" id="education_line">
 
 
           <section id="skills_categories">
@@ -88,7 +90,7 @@
 
             <div class="skills" id="back_end_skills">
               <input type="button" class="skill_button" value="Python" id="Python" onclick="skill_tab.show_details('Python', 'back_end_skills')">
-              <input type="button" class="skill_button" value="Nodejs" id="Nodejs" onclick="skill_tab.show_details('Nodejs', 'back_end_skills')">
+              <input type="button" class="skill_button" value="Node.js" id="Nodejs" onclick="skill_tab.show_details('Nodejs', 'back_end_skills')">
               <input type="button" class="skill_button" value="REST API" id="REST_API" onclick="skill_tab.show_details('REST_API', 'back_end_skills')">
               <input type="button" class="skill_button" value="Git" id="Git" onclick="skill_tab.show_details('Git', 'back_end_skills')">
               <input type="button" class="skill_button" value="Databases" id="Databases" onclick="skill_tab.show_details('Databases', 'back_end_skills')">
@@ -125,11 +127,11 @@
               <input type="button" class="skill_button" value="testing principles" id="testing" onclick="skill_tab.show_details('testing', 'theory_skills')">
             </div>
         </section>
-        <hr class="line">
+        <hr class="line" id="skills_line">
 
         <section id="projects_section">
-          <div class="projects" id="this_website">
-            <h1 class="project_title">This website</h1>
+          <div class="hidden" id="this_website">
+            <h1 class="project_title" id="this_website_title">Portfolio website</h1>
             <p class = "medium_text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit,
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -140,8 +142,8 @@
             </p>
           </div>
 
-          <div class="projects" id="REST_API_projects">
-            <h1 class="project_title">REST API projects</h1>
+          <div class="hidden" id="REST_API_projects">
+            <h1 class="project_title" id="REST_API_projects_title">REST API projects</h1>
             <p class = "medium_text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit,
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -152,8 +154,8 @@
             </p>
           </div>
 
-          <div class="projects" id="writing_quality_projections">
-            <h1 class="project_title">Writing quality projections AI</h1>
+          <div class="hidden" id="writing_quality_projections">
+            <h1 class="project_title" id="writing_quality_projections_title">Writing quality projections AI</h1>
             <p class = "medium_text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit,
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -164,8 +166,8 @@
             </p>
           </div>
 
-          <div class="projects" id="dataframe_encryption">
-            <h1 class="project_title">dataframe encryption project</h1>
+          <div class="hidden" id="dataframe_encryption">
+            <h1 class="project_title" id="dataframe_encryption_title">dataframe encryption project</h1>
             <p class = "medium_text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit,
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -176,8 +178,8 @@
             </p>
           </div>
 
-          <div class="projects" id="IOT_Arduino">
-            <h1 class="project_title">IOT Arduino project</h1>
+          <div class="hidden" id="IOT_Arduino">
+            <h1 class="project_title" id="IOT_Arduino_title">IOT Arduino project</h1>
             <p class = "medium_text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit,
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -188,5 +190,6 @@
             </p>
           </div>
         </section>
+        <hr class="line">
         </body>
 </html>
