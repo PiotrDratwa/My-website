@@ -66,6 +66,15 @@ img {
   border: 1px solid rgb(0, 115, 255);
 }
 
+#ambient {
+  position: absolute;
+  width: 100%;
+  height: 84%;
+  left: 0;
+  top: 4;
+  z-index: -1;
+}
+
 /*ledger and all children*/
 
 #ledger {
@@ -222,6 +231,7 @@ img {
   align-items: baseline;
   justify-content: center;
   padding: 7%;
+  padding-bottom: 0%;
   gap: 2%;
   row-gap: 3%;
   border-radius: 4%;
@@ -265,6 +275,7 @@ img {
   opacity: 1;
   filter:blur(0px);
   transform: translateX(0);
+  color: rgb(255, 255, 255);
 }
 
 .skill_category_button_show:hover{
@@ -273,13 +284,13 @@ img {
   transition:all ease-in-out 200ms;
 }
 
+/*I know it's super bloated I'll try to fix it later (wrapping it in a div doesn't work)*/
 #front_end{
   background:url('images/front-end.png');
   background-color: rgb(0, 115, 255);
   background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
-  color: rgb(255, 255, 255);
 }
 
 #back_end{
@@ -288,7 +299,6 @@ img {
   background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
-  color: rgb(255, 255, 255);
 }
 
 #low_level{
@@ -297,7 +307,6 @@ img {
   background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
-  color: rgb(255, 255, 255);
 }
 
 #data_ai{
@@ -306,7 +315,6 @@ img {
   background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
-  color: rgb(255, 255, 255);
 }
 
 #devops{
@@ -315,7 +323,6 @@ img {
   background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
-  color: rgb(255, 255, 255);
 }
 
 #theory{
@@ -324,7 +331,6 @@ img {
   background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
-  color: rgb(255, 255, 255);
 }
 
 #Javascript{
@@ -333,7 +339,6 @@ img {
   background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
-  color: rgb(255, 255, 255);
 }
 
 #HTML{
@@ -342,7 +347,6 @@ img {
   background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
-  color: rgb(255, 255, 255);
 }
 
 #CSS{
@@ -351,7 +355,6 @@ img {
   background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
-  color: rgb(255, 255, 255);
 }
 
 #Python{
@@ -360,7 +363,6 @@ img {
   background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
-  color: rgb(255, 255, 255);
 }
 
 #Nodejs{
@@ -369,7 +371,6 @@ img {
   background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
-  color: rgb(255, 255, 255);
 }
 
 #REST_API{
@@ -378,7 +379,134 @@ img {
   background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
-  color: rgb(255, 255, 255);
+}
+
+#Git{
+  background:url('images/git.png');
+  background-color: rgb(0, 115, 255);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#Databases{
+  background:url('images/db.png');
+  background-color: rgb(0, 115, 255);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#C{
+  background:url('images/c.png');
+  background-color: rgb(0, 115, 255);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#C_plus{
+  background:url('images/c++.png');
+  background-color: rgb(0, 115, 255);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#Assembly_x86{
+  background:url('images/assembly.png');
+  background-color: rgb(0, 115, 255);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#Arduino{
+  background:url('images/arduino.png');
+  background-color: rgb(0, 115, 255);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#AWS{
+  background:url('images/aws.png');
+  background-color: rgb(0, 115, 255);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#SQL{
+  background:url('images/db.png');
+  background-color: rgb(0, 115, 255);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#Linux{
+  background:url('images/linux.png');
+  background-color: rgb(0, 115, 255);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#Docker{
+  background:url('images/docker.png');
+  background-color: rgb(0, 115, 255);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#Agile{
+  background:url('images/agile.png');
+  background-color: rgb(0, 115, 255);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#Websocket{
+  background:url('images/websocket.png');
+  background-color: rgb(0, 115, 255);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#MongoDB{
+  background:url('images/db.png');
+  background-color: rgb(0, 115, 255);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#Concurrency{
+  background:url('images/concurrency.png');
+  background-color: rgb(0, 115, 255);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#SDLC{
+  background:url('images/sdlc.png');
+  background-color: rgb(0, 115, 255);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#testing{
+  background:url('images/testing.png');
+  background-color: rgb(0, 115, 255);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .skills{
@@ -386,6 +514,7 @@ img {
   grid-template-columns : 28% 28% 28%;
   margin: 0% 15%;
   padding : 5%;
+  padding-top: 2%;
   gap : 2%;
   align-items : baseline;
   justify-content : center;
@@ -409,6 +538,10 @@ img {
   gap: 10%;
   row-gap: 10%;
   background-color: rgb(0, 115, 255);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgb(255, 255, 255);
 }
 
 .skill_button:hover{
@@ -458,3 +591,11 @@ img {
   padding-top: 6%;
 }
 
+
+.bvambient_particle
+{
+	position: absolute;
+	pointer-events: none;
+	transition: top linear, left linear;
+  z-index: -1;
+}

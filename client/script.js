@@ -36,6 +36,7 @@ class skills_tab{
         }
 
         document.getElementById(id).style.display = "grid";
+        document.getElementById(id).scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
         this.last_tab = id
 
         const children = document.getElementById(id).children;
@@ -74,3 +75,4 @@ class skills_tab{
 }
 
 const skill_tab = new skills_tab();
+

@@ -7,6 +7,47 @@
     <script defer src="script.js"></script>
     </head>
     <body>
+
+      <div id="ambient"></div>
+
+      <script src="bvambient.js"></script>
+      <script>
+      document.addEventListener("DOMContentLoaded", function() {
+            var demo1 = new BVAmbient({
+              selector: "#ambient",
+              fps: 60,
+              max_transition_speed: 12000,
+              min_transition_speed: 8000,
+              particle_number: 30,
+              particle_maxwidth: 60,
+              particle_minwidth: 10,
+              particle_radius: 50,
+              particle_opacity: true,
+              particle_colision_change: true,
+              particle_background: "rgb(0, 115, 255)",
+              refresh_onfocus: true,
+              particle_image: {
+                image: false,
+                src: ""
+              },
+              responsive: [
+                  {
+                    breakpoint: 768,
+                    settings: {
+                      particle_number: "15"
+                    }
+                  },
+                  {
+                    breakpoint: 480,
+                    settings: {
+                      particle_number: "10"
+                    }
+                  }
+              ]
+            });
+      });
+      </script>
+
         <div id="ledger">
           <section class="ledger_container">
             <a href=#home_page type="button" id="home" class="ledger_button">Home</a>
@@ -32,8 +73,8 @@
         <section id="home_page" >
           <img src="images/face.bmp" id="face">
           <div id="introduction">
-            <h1 class="headers">Hello,</h1>
-            <h1 class="headers">I'm Piotr Dratwa</h1>
+            <h1 class="hidden" id="abt_header1">Hello,</h1>
+            <h1 class="hidden" id="abt_header2">I'm Piotr Dratwa</h1>
               <a href="#"><img src="images/Linkedin_logo.webp" class="icons"></a>
               <a href="#"><img src="images/pngwing.com.png" class="icons" id="github"></a>
           </div>
@@ -124,7 +165,7 @@
               <input type="button" class="skill_button" value="Concurrency" id="Concurrency" onclick="skill_tab.show_details('Concurrency', 'theory_skills')">
               <input type="button" class="skill_button" value="Agile" id="Agile" onclick="skill_tab.show_details('Agile', 'theory_skills')">
               <input type="button" class="skill_button" value="SDLC" id="SDLC" onclick="skill_tab.show_details('SDLC', 'theory_skills')">
-              <input type="button" class="skill_button" value="testing principles" id="testing" onclick="skill_tab.show_details('testing', 'theory_skills')">
+              <input type="button" class="skill_button" value="testing" id="testing" onclick="skill_tab.show_details('testing', 'theory_skills')">
             </div>
         </section>
         <hr class="line" id="skills_line">
