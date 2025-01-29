@@ -189,7 +189,7 @@ img {
   color:rgb(0, 115, 255);
   font-weight: bold;
   font-size: 2vw;
-  margin: 8% 15%;
+  margin: 8% 17%;
 }
 
 /*education section and all children*/
@@ -587,8 +587,18 @@ img {
   margin-bottom: 12%;
 }
 
+.title_link{
+  display:flex;
+  align-items: baseline;
+  align-content: stretch;
+  column-gap: 2%;
+}
+
 .project_title{
   padding-top: 6%;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+  white-space: nowrap;
 }
 
 
@@ -598,4 +608,9 @@ img {
 	pointer-events: none;
 	transition: top linear, left linear;
   z-index: -1;
+}
+
+.project_icon{
+  height: 3vw;
+  width: 3vw;
 }
