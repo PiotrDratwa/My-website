@@ -24,7 +24,7 @@
               particle_radius: 50,
               particle_opacity: true,
               particle_colision_change: false,
-              particle_background: "rgb(0, 115, 255)",
+              particle_background: "rgb(0, 155, 255)",
               refresh_onfocus: false,
               particle_image: {
                 image: false,
@@ -54,7 +54,7 @@
             <a href=#home_line type="button" id="abt_me" class="ledger_button">About me</a>
             <a href=#about_line type="button" id="Education" class="ledger_button">Education</a>
             <a href=#education_line type="button" id="skills" class="ledger_button">Skills</a>
-            <a href=# type="button" id="contact" class="ledger_button">Contact</a>
+            <a href=#contact_section type="button" id="contact" class="ledger_button">Contact</a>
             <div class="dropdown">
               <button id="dropdown_button" class="ledger_button">Projects</button>
               <div class="dropdown_content">
@@ -72,11 +72,12 @@
 
         <section id="home_page" >
           <img src="images/face.bmp" id="face">
-          <div id="introduction">
-            <h1 class="hidden" id="abt_header1">Hello,</h1>
-            <h1 class="hidden" id="abt_header2">I'm Piotr Dratwa</h1>
-              <a href="https://www.linkedin.com/in/piotr-dratwa-a96379299/?locale=en_US"><img src="images/Linkedin_logo.webp" class="icons"></a>
-              <a href="https://github.com/PiotrDratwa"><img src="images/pngwing.com.png" class="icons" id="github"></a>
+          <div>
+            <div id="introduction">
+              <h1 class="hidden" id="abt_header">Hello, I'm Piotr Dratwa</h1>
+            </div>
+            <a href="https://www.linkedin.com/in/piotr-dratwa-a96379299/?locale=en_US"><img src="images/Linkedin_logo.webp" class="icons"></a>
+            <a href="https://github.com/PiotrDratwa"><img src="images/pngwing.com.png" class="icons" id="github"></a>
           </div>
         </section>
         <hr class="line" id="home_line">
@@ -177,10 +178,7 @@
             </div>
             <p class = "medium_text">
               The website you see was made with pure Javascript, HTML and CSS.
-              I didn’t use any frameworks, because of the website’s size.
-              It doesn’t need to be particularly big, so using any other tools would only bloat the site.
-              Besides, I believe it’s good once in a while to build something using fundamental resources.
-              It trains your resourcefulness and creativity, because when there isn’t any ready solution(provided by framework), then you have to come up with one yourself.
+              I made it with only fundamental tools to not bloat it and train my own resourcefulness and creativity
               <br> <a class="github_link" href="https://github.com/PiotrDratwa/My-website">Github link</a>
             </p>
           </div>
@@ -208,7 +206,7 @@
               </div>
             <p class = "medium_text">
               The goal of this project was to create an AI that would predict students’ essay grades based on the data of the essay (how many individual cases were used,
-              how many capital letters were there) and students’ behaviour during the essay.
+              how many capital letters were there) and students’ behaviour during the essay.<br>
               We had to transform the data and use different machine learning algorithms to find the best working one.
               Finally the AI had mean error of around 0.4 on the scale 2-5.5.<br>
               The technologies used: Python, Seaborne, Pandas, sci-kit learn.
@@ -222,8 +220,7 @@
               <a href="https://github.com/PiotrDratwa/dataframe-encryption"><img src="images/pngwing.com.png" class="project_icon" id="github"></a>
               </div>
             <p class = "medium_text">
-              It’s a Python library made in C, to encrypt pandas dataframes using the RSA algorithm. It also includes example of usage.
-              The reason it is made in C is because Python computes very slowly and all popular fast libraries for Python are actually made in C.
+              It’s a Python library made in C, to encrypt pandas dataframes using the RSA algorithm. It also includes example of usage on an example dataframe.
               <br> <a class="github_link" href="https://github.com/PiotrDratwa/dataframe-encryption">Github link</a>
             </p>
           </div>
@@ -241,6 +238,17 @@
               <br> <a class="github_link" href="https://github.com/PiotrDratwa/IOT_project">Github link</a>
             </p>
           <div>
+          </div>
+        </section>
+        <hr class="line">
+
+
+        <section id="contact_section" class="hidden">
+          <h1>You can contact me through:</h1>
+          <div id="contact">
+            <div class="contact_info" id="linkedin_contact"><img src="images/Linkedin_logo.webp" class="icons"><a style="color:rgb(40,40,40); font-family: inter; text-decoration: none;" href="https://www.linkedin.com/in/piotr-dratwa-a96379299/?locale=en_US">Linkedin</a></div>
+            <a class="contact_info"><img src="images/gmail.png" class="icons">piotr.k.dratwa@gmail.com</a>
+            <a class="contact_info"><img src="images/phone.png" class="icons">48+ 535 080 601</a>
           </div>
         </section>
         <hr class="line">

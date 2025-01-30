@@ -162,7 +162,7 @@ img {
 #home_page {
   display: flex;
   align-items: center;
-  gap: 10%;
+  gap: 5%;
   margin-bottom:10%;
 }
 
@@ -174,14 +174,40 @@ img {
   border-radius: 100%;
 }
 
+#introduction h1{
+  overflow: hidden;
+  border-right: .15em solid rgb(0, 115, 255);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 4px;
+  animation:
+    typing 2.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
 #introduction {
   font-size: 2vw;
   margin-top:10%;
+  width: fit-content;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100%}
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(0, 115, 255); }
 }
 
 .icons{
   height: 5%;
   width: 5%;
+}
+
+#abt_header{
+  line-height: 1.6;
 }
 
 /*about me section and all children*/
@@ -619,4 +645,35 @@ img {
 .github_link{
   color:rgb(0, 115, 255);
   text-decoration: none;
+}
+
+#contact_section {
+  margin: 8% 12%;
+  padding: 0% 5%;
+  padding-bottom: 0%;
+  color:rgb(0, 115, 255);
+  font-weight: bold;
+  font-size: 2vw;
+  margin-bottom: 12%;
+}
+
+#contact {
+  display:flex;
+  flex-direction: column;
+}
+
+.contact_info {
+  color: rgb(40,40,40);
+  text-decoration: none;
+  font-family:inter;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3%;
+  column-gap: 1%;
+}
+
+#linkedin_contact{
+  display: flex;
+  align-items: center;
+  column-gap: 1%;
 }
