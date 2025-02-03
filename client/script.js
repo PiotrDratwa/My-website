@@ -23,7 +23,34 @@ skill_buttons.forEach((el) => observer_skill.observe(el));
 class skills_tab{
     last_tab = "";
     last_skill = "";
-    last_cat="";
+    last_cat = "";
+    // this variable is to determine if a detail button was clicked 2 times already, prevents a bug where it duplicates
+    last_detail = 0;
+
+    details = {
+        "Javascript":"I learned it through my own studies and university. I also know React and Nodejs frameworks.Projects I've done with js include:<br>- this website<br>- React project<br>- tournament app REST",
+        "HTML":"I learned it mainly through my own studies. All my web projects include html in some form, like this website, or React project",
+        "CSS":"I learned it mainly through my own studies. Main project with it is definitely this portfolio website, although it's sprinkled in among other projects of mine",
+        "Python":"I learned it on my own through online courses, later cemented it in university. I know popular libraries like Fastapi, Django, Pandas, Scikit-learn. Projects I've done with it include:<br>- Writing quality projections AI<br>- BlackJack AI<br>- Recipy app REST API",
+        "Nodejs":"",
+        "REST API":"",
+        "Git":"",
+        "Databases":"",
+        "Websocket":"",
+        "C":"",
+        "C++":"",
+        "Assembly x86":"",
+        "Arduino":"",
+        "AWS":"",
+        "SQL":"",
+        "Mongodb":"",
+        "Linux":"",
+        "Docker":"",
+        "Concurrency":"",
+        "Agile":"",
+        "SDLC":"",
+        "testing":""
+    }
 
     show_skills_tab(id){
         //if there was last shown tab, then hide it so the new one can appear
@@ -49,7 +76,7 @@ class skills_tab{
 
 
     show_details(id, cat){
-        if(this.last_skill !== ""){
+        if(this.last_skill !== "" && this.last_detail == 0){
             const last_button = document.getElementById(this.last_skill);
             document.getElementById(this.last_cat).appendChild(last_button);
             document.getElementById("skill_details_text").innerHTML = "";
@@ -57,20 +84,17 @@ class skills_tab{
 
         //make it so it disappears when clicking on the shown skill again
         const child = document.querySelector(`#${cat} > #${id}`);
-        if(this.last_skill == id && this.last_cat == cat){
+        console.log(this.last_detail)
+        if(this.last_skill == id && this.last_cat == cat && this.last_detail == 0){
+            this.last_detail = 1;
             return
         }
         document.getElementById("skill_details").prepend(child);
-        document.getElementById("skill_details_text").innerHTML = `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum`;
+        document.getElementById("skill_details_text").innerHTML = this.details[id]
 
         this.last_skill = id;
         this.last_cat = cat;
+        this.last_detail = 0;
     }
 }
 
