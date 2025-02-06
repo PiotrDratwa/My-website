@@ -1,10 +1,12 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="en" class="notranslate" translate="no">
     <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
+    <!--turning off google translate for now, elements were being displaced, I'll fix it in an update-->
+    <meta name="google" content="notranslate" />
     </head>
     <body>
 
@@ -75,9 +77,9 @@
           <div>
             <div id="introduction">
               <h1 class="hidden" id="abt_header">Hello, I'm Piotr Dratwa</h1>
-            </div>
-            <a href="https://www.linkedin.com/in/piotr-dratwa-a96379299/?locale=en_US"><img src="images/Linkedin_logo.webp" class="icons"></a>
-            <a href="https://github.com/PiotrDratwa"><img src="images/pngwing.com.png" class="icons" id="github"></a>
+            </div id="socials">
+            <a href="https://www.linkedin.com/in/piotr-dratwa-a96379299/?locale=en_US"><img src="images/Linkedin_logo.png" class="icons"></a>
+            <a href="https://github.com/PiotrDratwa"><img src="images/github.png" class="icons" id="github"></a>
           </div>
         </section>
         <hr class="line" id="home_line">
@@ -111,7 +113,7 @@
             <input type="button" class="skill_category_button_hidden" value="front end" id="front_end" onclick="skill_tab.show_skills_tab('front_end_skills')">
             <input type="button" class="skill_category_button_hidden" value="back end" id="back_end" onclick="skill_tab.show_skills_tab('back_end_skills')">
             <input type="button" class="skill_category_button_hidden" value="low level" id="low_level" onclick="skill_tab.show_skills_tab('low_level_skills')">
-            <input type="button" class="skill_category_button_hidden" value="Data and AI" id="data_ai" onclick="skill_tab.show_skills_tab('data_ai_skills')">
+            <input type="button" class="skill_category_button_hidden" value="Data/AI" id="data_ai" onclick="skill_tab.show_skills_tab('data_ai_skills')">
             <input type="button" class="skill_category_button_hidden" value="Devops" id="devops" onclick="skill_tab.show_skills_tab('devops_skills')">
             <input type="button" class="skill_category_button_hidden" value="theory" id="theory" onclick="skill_tab.show_skills_tab('theory_skills')">
           </section>
@@ -174,11 +176,11 @@
           <div class="hidden" id="this_website">
             <div class="title_link">
             <h1 class="project_title" id="this_website_title">Portfolio website</h1>
-            <a href="https://github.com/PiotrDratwa/My-website"><img src="images/pngwing.com.png" class="project_icon" id="github"></a>
+            <a href="https://github.com/PiotrDratwa/My-website"><img src="images/github.png" class="project_icon" id="github"></a>
             </div>
             <p class = "medium_text">
               The website you see was made with pure Javascript, HTML and CSS.
-              I made it with only fundamental tools to not bloat it and train my own resourcefulness and creativity
+              I made it with only fundamental tools to not bloat it and train my own resourcefulness and creativity.
               <br> <a class="github_link" href="https://github.com/PiotrDratwa/My-website">Project Github link</a>
             </p>
           </div>
@@ -186,11 +188,11 @@
           <div class="hidden" id="REST_API_projects">
             <div class="title_link">
               <h1 class="project_title" id="REST_API_projects_title">REST API projects</h1>
-              <a href="https://github.com/PiotrDratwa"><img src="images/pngwing.com.png" class="project_icon" id="github"></a>
+              <a href="https://github.com/PiotrDratwa"><img src="images/github.png" class="project_icon" id="github"></a>
               </div>
             <p class = "medium_text">
               I have done two projects to get a hold of how the REST architecture works.
-              One is tournament database app. It's goal is to browse, create, edit and delete database records of football matches through the REST model with SwaggerUI automatic documentation. As it was it's main function the front end is minimal
+              One is tournament database app. It's goal is to browse, create, edit and delete database records of football matches, through the REST model with SwaggerUI automatic documentation. Because it's main purpose was interacting with database, the front end is minimal.
               The second one is the Recipe app API, it's definitely more extensive, with contenerization authorization and user model of a social media app for browsing, creating and editing cooking recipes. it also has SwaggerUI automatic documentation.
               <br> <a class="github_link" href="https://github.com/PiotrDratwa/Tournament-app">Tournament app Github link</a>
               <br> <a class="github_link" href="https://github.com/PiotrDratwa/Recipy_app_API">Recipe app Github link</a>
@@ -200,7 +202,7 @@
           <div class="hidden" id="writing_quality_projections">
             <div class="title_link">
               <h1 class="project_title" id="writing_quality_projections_title">Writing quality projections AI</h1>
-              <a href="https://github.com/PiotrDratwa/Writing_quality_projections"><img src="images/pngwing.com.png" class="project_icon" id="github"></a>
+              <a href="https://github.com/PiotrDratwa/Writing_quality_projections"><img src="images/github.png" class="project_icon" id="github"></a>
               </div>
             <p class = "medium_text">
               The goal of this project was to create an AI that would predict students’ essay grades based on the data of the essay (how many individual cases were used,
@@ -215,7 +217,7 @@
           <div class="hidden" id="dataframe_encryption">
             <div class="title_link">
               <h1 class="project_title" id="dataframe_encryption_title">dataframe encryption project</h1>
-              <a href="https://github.com/PiotrDratwa/dataframe-encryption"><img src="images/pngwing.com.png" class="project_icon" id="github"></a>
+              <a href="https://github.com/PiotrDratwa/dataframe-encryption"><img src="images/github.png" class="project_icon" id="github"></a>
               </div>
             <p class = "medium_text">
               It’s a Python library made in C, to encrypt pandas dataframes using the RSA algorithm. It also includes example of usage on an example dataframe.
@@ -226,7 +228,7 @@
           <div class="hidden" id="IOT_Arduino">
             <div class="title_link">
               <h1 class="project_title" id="IOT_Arduino_title">IOT Arduino project</h1>
-              <a href="https://github.com/PiotrDratwa/IOT_project"><img src="images/pngwing.com.png" class="project_icon" id="github"></a>
+              <a href="https://github.com/PiotrDratwa/IOT_project"><img src="images/github.png" class="project_icon" id="github"></a>
               </div>
             <p class = "medium_text">
               It is a project consisting of a couple integrated modules that cooperate to measure, and transform the data.<br>
@@ -244,7 +246,7 @@
         <section id="contact_section" class="hidden">
           <h1>You can contact me through:</h1>
           <div id="contact">
-            <div class="contact_info" id="linkedin_contact"><img src="images/Linkedin_logo.webp" class="icons"><a style="color:rgb(40,40,40); font-family: inter; text-decoration: none;" href="https://www.linkedin.com/in/piotr-dratwa-a96379299/?locale=en_US">Linkedin</a></div>
+            <div class="contact_info" id="linkedin_contact"><img src="images/Linkedin_logo.png" class="icons"><a style="color:rgb(40,40,40); font-family: inter; text-decoration: none;" href="https://www.linkedin.com/in/piotr-dratwa-a96379299/?locale=en_US">Linkedin</a></div>
             <a class="contact_info"><img src="images/gmail.png" class="icons">piotr.k.dratwa@gmail.com</a>
             <a class="contact_info"><img src="images/phone.png" class="icons">48+ 535 080 601</a>
           </div>

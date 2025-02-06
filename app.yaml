@@ -1,2 +1,13 @@
-runtime: nodejs
-vm: true
+runtime: nodejs20
+env: standard
+
+handlers:
+- url: /client
+  static_dir: client
+
+- url: /
+  static_files: client/index.html
+  upload: client/index.html
+
+- url: /.*
+  script: auto

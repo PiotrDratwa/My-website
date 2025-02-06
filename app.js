@@ -6,3 +6,7 @@ app.use(express.static('client'));
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
     });
+
+app.get('/', function(request, response){
+    response.sendFile('/client/index.html');
+});

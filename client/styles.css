@@ -292,6 +292,9 @@ img {
 }
 
 .skill_category_button_show{
+  max-width: 350px;
+  max-height: 220px;
+  text-wrap:wrap;
   border: none;
   font-weight: bold;
   font-size: 130%;
@@ -547,6 +550,7 @@ img {
   justify-content : center;
   row-gap: 3%;
   border-radius: 4%;
+  text-wrap:wrap;
 }
 
 #skill_details{
