@@ -28,3 +28,7 @@ https://portfolio-website-449913.lm.r.appspot.com/
 - **Express.js**: Web framework for handling routes and API calls.
 - **Google App Engine**: Deployment using `app.yaml`.
 - **NPM**: Manages dependencies.
+
+---
+
+All credit for the home page background animation goes to Bruno Vieira.
