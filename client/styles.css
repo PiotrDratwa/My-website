@@ -644,6 +644,8 @@ img {
 .project_icon{
   height: 3vw;
   width: 3vw;
+  margin-top: auto;
+  vertical-align: bottom;
 }
 
 .github_link{
